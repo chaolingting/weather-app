@@ -11,8 +11,9 @@ body {
 }
 
 *{
-    margin: 0;
+  margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 :root {
@@ -36,6 +37,10 @@ header {
 h1, h2, h3 {
   font-weight: 400;
   
+}
+
+h2 {
+  font-size: 1.3rem;
 }
 
 .header-text{
@@ -105,6 +110,9 @@ button:active {
   padding: 2rem;
   background-color: white;
   gap: 2rem;
+  flex-wrap: wrap;
+  margin: 1rem;
+
 }
 
 .current-time {
@@ -193,4 +201,23 @@ footer {
   margin-bottom: 2rem;
   padding-right: 2rem;
   align-self: stretch;
+}
+
+
+
+@media (max-width: 768px) {
+
+
+  header {
+    padding: 1rem;
+  }
+
+  .header-text {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  #weather-form {
+    padding: 1rem;
+  }
 }
