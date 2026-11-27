@@ -13,7 +13,8 @@ body {
 *{
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  box-sizing: border-box;
+
 }
 
 :root {
@@ -32,6 +33,7 @@ main {
 header {
   padding-top: 3rem;
   padding-bottom: 2rem;
+
 }
 
 h1, h2, h3 {
@@ -45,7 +47,7 @@ h2 {
 
 .header-text{
   font-weight: 200;
-  font-size: 2.2rem;
+  font-size: clamp(1.5rem, 7vw, 2.2rem);
   font-family: "Bricolage Grotesque", sans-serif;
   transition: color 0.5s ease;
 }
@@ -107,7 +109,7 @@ button:active {
   /* max-width: 350px; */
   display: flex;
   flex-direction: row;
-  padding: 2rem;
+  padding: clamp(1rem, 10vw, 2rem);
   background-color: white;
   gap: 2rem;
   flex-wrap: wrap;
@@ -214,7 +216,8 @@ footer {
 
   .header-text {
     text-align: center;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    padding: 1rem;
   }
 
   #weather-form {
